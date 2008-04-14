@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LspInstall", "LspInstall\LspInstall.vcproj", "{DD345209-CDC4-4BC7-A66E-8C9F07A19C79}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BCA094D3-D00E-44E3-8A1B-41760BDA39C0} = {BCA094D3-D00E-44E3-8A1B-41760BDA39C0}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LspPyFilter", "LspPyFilter\LspPyFilter.vcproj", "{DAA66CCA-5C6B-4EC2-B09A-584B3931CFF6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BCA094D3-D00E-44E3-8A1B-41760BDA39C0} = {BCA094D3-D00E-44E3-8A1B-41760BDA39C0}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LspPyFilterMarshal", "LspPyFilterMarshal\LspPyFilterMarshal.vcproj", "{BCA094D3-D00E-44E3-8A1B-41760BDA39C0}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LspPyFilterProvider", "LspPyFilterProvider\LspPyFilterProvider.vcproj", "{A13A026A-3FF1-4A28-9507-4B8A5E752C8E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BCA094D3-D00E-44E3-8A1B-41760BDA39C0} = {BCA094D3-D00E-44E3-8A1B-41760BDA39C0}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DD345209-CDC4-4BC7-A66E-8C9F07A19C79}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DD345209-CDC4-4BC7-A66E-8C9F07A19C79}.Debug|Win32.Build.0 = Debug|Win32
+		{DD345209-CDC4-4BC7-A66E-8C9F07A19C79}.Release|Win32.ActiveCfg = Release|Win32
+		{DD345209-CDC4-4BC7-A66E-8C9F07A19C79}.Release|Win32.Build.0 = Release|Win32
+		{DAA66CCA-5C6B-4EC2-B09A-584B3931CFF6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DAA66CCA-5C6B-4EC2-B09A-584B3931CFF6}.Debug|Win32.Build.0 = Debug|Win32
+		{DAA66CCA-5C6B-4EC2-B09A-584B3931CFF6}.Release|Win32.ActiveCfg = Release|Win32
+		{DAA66CCA-5C6B-4EC2-B09A-584B3931CFF6}.Release|Win32.Build.0 = Release|Win32
+		{BCA094D3-D00E-44E3-8A1B-41760BDA39C0}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BCA094D3-D00E-44E3-8A1B-41760BDA39C0}.Debug|Win32.Build.0 = Debug|Win32
+		{BCA094D3-D00E-44E3-8A1B-41760BDA39C0}.Release|Win32.ActiveCfg = Release|Win32
+		{BCA094D3-D00E-44E3-8A1B-41760BDA39C0}.Release|Win32.Build.0 = Release|Win32
+		{A13A026A-3FF1-4A28-9507-4B8A5E752C8E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A13A026A-3FF1-4A28-9507-4B8A5E752C8E}.Debug|Win32.Build.0 = Debug|Win32
+		{A13A026A-3FF1-4A28-9507-4B8A5E752C8E}.Release|Win32.ActiveCfg = Release|Win32
+		{A13A026A-3FF1-4A28-9507-4B8A5E752C8E}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

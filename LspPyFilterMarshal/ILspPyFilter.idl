@@ -1,0 +1,43 @@
+// ========================================================================================================================
+// LspPyFilterMarshal
+//
+// Copyright ©2007 Liam Kirton <liam@int3.ws>
+// ========================================================================================================================
+// ILspPyFilter.idl
+//
+// Created: 15/05/2007
+// ========================================================================================================================
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+// ========================================================================================================================
+
+[object, uuid(0B358C0D-90A4-46d7-AE74-2CD8D82E2488), oleautomation]
+interface ILspPyFilter : IUnknown
+{
+	HRESULT ConnectFilter([in] unsigned int process,
+						  [in] unsigned int thread,
+						  [in] unsigned int socket,
+						  [in, out] unsigned int *ip,
+						  [in, out] unsigned short *port);
+
+	HRESULT DisconnectFilter([in] unsigned int process,
+							 [in] unsigned int thread,
+							 [in] unsigned int socket);
+
+	HRESULT RecvFilter([in] unsigned int process,
+					   [in] unsigned int thread,
+					   [in] unsigned int socket,
+					   [in] BSTR *recvBuffer,
+					   [out] BSTR *modifiedRecvBuffer,
+					   [out] unsigned int *remaining);
+
+	HRESULT SendFilter([in] unsigned int process,
+					   [in] unsigned int thread,
+					   [in] unsigned int socket,
+					   [in] BSTR *sendBuffer,
+					   [out] BSTR *modifiedSendBuffer);
+};
+
+// ========================================================================================================================
